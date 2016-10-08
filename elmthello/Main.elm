@@ -18,7 +18,7 @@ type alias State = (Int, Board, Bool) -- Int is player # whose turn it is, Bool 
 -- Signal from buttons, Loc is a piece, Check is a timer reminder, AI is the AI toggle
 type Sig = Loc (Int,Int) | Check Float | AI
 
-initState = (1, initBoard, False)
+initState = (1, initBoard, True)
 aiMove = getAiMove
 
 -- Generalized function to change turns
